@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+   <form id="form"  class="form">
+    <p class="heading">User Access</p>
+<!-- Password -->
+      <div class="form-control">
+        <input required type="password" name="password" />
+        <label>
+          <span style="transition-delay: 350ms">P</span>
+          <span style="transition-delay: 300ms">a</span>
+          <span style="transition-delay: 250ms">s</span>
+          <span style="transition-delay: 200ms">s</span>
+          <span style="transition-delay: 150ms">w</span>
+          <span style="transition-delay: 100ms">o</span>
+          <span style="transition-delay: 50ms">r</span>
+          <span style="transition-delay: 0ms">d</span>
+        </label>
+
+
+      <!-- Username -->
+      <div class="form-control">
+        <input required type="text" name="username" />
+        <label>
+          <span style="transition-delay: 350ms">U</span>
+          <span style="transition-delay: 300ms">s</span>
+          <span style="transition-delay: 250ms">e</span>
+          <span style="transition-delay: 200ms">r</span>
+          <span style="transition-delay: 150ms">n</span>
+          <span style="transition-delay: 100ms">a</span>
+          <span style="transition-delay: 50ms">m</span>
+          <span style="transition-delay: 0ms">e</span>
+        </label>
+      </div>
+    <button type="submit" class="btn">Submit</button>
+
+    <script>
+  const loginForm = document.getElementById("form");
+
+  loginForm.addEventListener("submit", function(e) {
+    e.preventDefault(); // prevent actual form submission
+
+    loginForm.classList.add("crack");
+
+    setTimeout(() => {
+      window.location.href = "page.html";
+    }, 1800); 
+  });
+</script>
+
+</form>
+  </body>
+</html>
